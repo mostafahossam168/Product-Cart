@@ -124,7 +124,7 @@ section .container .products-boxs .product h3:hover {
 
 @media (max-width: 767px) {
   .preview {
-    width: 270px;
+    width: 300px;
   }
 }
 .preview.show {
