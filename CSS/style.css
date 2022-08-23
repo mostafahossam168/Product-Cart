@@ -8,27 +8,10 @@
   outline: none;
   transition: 0.3s;
 }
-html {
-  scroll-behavior: smooth;
-}
 .container {
   margin: 0px auto;
   padding: 15px 0px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+  width: 85%;
 }
 /*Start Section*/
 section {
@@ -53,8 +36,13 @@ section .heading {
 
 section .container .products-boxs {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 350px) {
+  section .container .products-boxs {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 section .container .products-boxs .product {
   background-color: #fff;
@@ -113,7 +101,7 @@ section .container .products-boxs .product h3:hover {
   display: flex;
 }
 .preview {
-  display: none;
+  display: block;
   width: 350px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -126,9 +114,6 @@ section .container .products-boxs .product h3:hover {
   .preview {
     width: 300px;
   }
-}
-.preview.show {
-  display: block;
 }
 .preview > span {
   position: absolute;
